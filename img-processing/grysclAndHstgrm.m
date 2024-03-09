@@ -4,6 +4,8 @@
 
 clc, clear all, close all, format compact
 
+pkg load image
+
 img = imread("desktop.png"); % load image
 %figure, imshow(img);        % show img on new figure
 
@@ -21,6 +23,8 @@ figure, imhist(histeq(gry_img));
 figure, imshow(histeq(gry_img));
 
 figure, imshowpair(gry_img, histeq(gry_img), 'montage');
+
+
 
 
 
