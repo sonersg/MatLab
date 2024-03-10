@@ -8,11 +8,11 @@ clc, clear all, close all, format compact
 
 img = zeros(256);
 
-img(:, 1:5) = 0.8;
-img(:, 251:256) = 0.8;
+img(:, 1:5) = 0.7;      % left border
+img(:, 251:256) = 0.7;  % right border
 
-img(1:5, :) = 0.8;
-img(251:256, :) = 0.8;
+img(1:5, :) = 0.7;      % top border
+img(251:256, :) = 0.7;  % bottom border
 
 
 
