@@ -27,10 +27,13 @@ B = img_raw(:,:,3);
 ##figure, imshow(B), pause(0.5), title("Blue");
 
 
+
 ###### Recombine color channels into an image
 
 ##recombined = cat(3,R,G,B);
 ##figure, imshow(recombined), pause(0.5), title("Recombined");
+
+
 
 ###### Edit pixels values
 
