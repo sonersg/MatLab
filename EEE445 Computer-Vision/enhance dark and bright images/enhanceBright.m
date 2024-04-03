@@ -1,7 +1,7 @@
 
 
 %% Power Law - Gamma Correction Transformation
-%% s = c⋅r^y
+## s = c*r^y
 
 clc, clear all, close all, format compact
 
@@ -12,7 +12,7 @@ input_image = imread('light.jpg');
 
 % Define the gamma parameter
 gamma = 0.3; % You can adjust this value to control the degree of brightness adjustment
-%% s = c⋅r^y
+## s = c*r^y
 ## y < 1: It enhances the contrast and brightens the image.
 ## y > 1: It reduces the contrast and darkens the image.
 ## y = 1: It no change occurs.
