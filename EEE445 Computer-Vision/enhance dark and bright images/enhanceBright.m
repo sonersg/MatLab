@@ -1,6 +1,7 @@
 
 
-%% Enhance Dark Image
+%% Power Law - Gamma Correction Transformation
+## s = c⋅r^y
 
 clc, clear all, close all, format compact
 
