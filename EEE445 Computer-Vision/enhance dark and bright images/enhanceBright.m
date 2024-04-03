@@ -6,35 +6,25 @@ clc, clear all, close all, format compact
 
 pkg load image
 
-% Read the image
-brightImage = imread("light.jpg");
+% Read the input image
+input_image = imread('light.jpg');
 
-original_img = brightImage;
+% Define the gamma parameter
+gamma = 0.3; % You can adjust this value to control the degree of brightness adjustment
+## s = c⋅r^y
+## y < 1: It enhances the contrast and brightens the image.
+## y > 1: It reduces the contrast and darkens the image.
+## y = 1: It no change occurs.
 
-[r, c, x] = size(brightImage);
-percentage = 52;
-thrshld = 100;
+% Perform power law transformation
+output_image = imadjust(input_image, [], [], gamma);
 
+% Display the original and transformed images
+subplot(1, 2, 1);
+imshow(input_image);
+title('Original Image');
 
-for i = 1:r
-  for j = 1:c
-    for k = 1:x
-
-      if brightImage(i,j,k) > thrshld
-
-##        rgb_ = brightImage(i,j,k) + percentage;
-        brightImage(i,j,k) = 0;
-
-      endif
-
-    endfor
-  endfor
-endfor
-
-figure, imshowpair(original_img, brightImage, "montage");
-
-##brightImage(1:600,:,3) = 0;
-##
-##imshow(brightImage);
-
+subplot(1, 2, 2);
+imshow(output_image);
+title('Power Law Transformed Image (Gamma corrected)');
 

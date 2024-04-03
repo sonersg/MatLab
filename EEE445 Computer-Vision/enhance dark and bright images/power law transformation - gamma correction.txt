@@ -1,0 +1,29 @@
+
+In image processing, the power law transformation, also known as gamma correction, is a technique used to adjust the brightness and contrast of an image by applying a power-law function to the pixel intensities. This transformation is particularly useful for correcting images with non-linear intensity variations, such as those captured in low-light conditions or with overexposure.
+
+The power law transformation is defined mathematically as:
+
+s=c⋅r^γ
+
+where:
+
+s is the transformed pixel intensity.
+
+r is the original pixel intensity.
+
+c is a constant that scales the intensity values to fit within the desired range.
+
+γ is the gamma parameter, controlling the shape of the transformation curve. It determines the degree of brightness adjustment.
+Key points about power law transformation:
+
+If:
+γ>1: It enhances the contrast and brightens the image.
+
+γ<1: It reduces the contrast and darkens the image.
+γ=1: No change occurs.
+
+Contrast Adjustment: Power law transformation is commonly used to adjust the contrast of images by changing the gamma parameter.
+
+Gamma Correction: In addition to contrast adjustment, gamma correction is often used to compensate for the nonlinear response of display devices, such as monitors and printers. It ensures that the displayed image matches the intended appearance.
+
+Applications: Power law transformation is widely used in various image processing applications, including photography, medical imaging, and computer graphics.
